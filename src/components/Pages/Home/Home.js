@@ -1,14 +1,15 @@
 import React from 'react'
+import Header from '../../Header/Header'
 import Login from '../Login/Login'
-// import NavBar from '../../NavBar/NavBar'
 
-import SignUp from '../Signup/Signup'
+// import SignUp from '../Signup/Signup'
 
 
 function Home() {
   return (
     <div>
     {/* <NavBar/> */}
+      <Header/>
       <Login/>
       
     </div>
