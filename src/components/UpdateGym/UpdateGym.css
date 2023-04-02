@@ -1,0 +1,10 @@
+.add {
+    margin: auto;
+    max-width: 340px;
+  }
+  button{
+    max-width: 100px;
+  }
+  #card{
+    border-radius: 40px;
+  }
