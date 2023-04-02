@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Form, Input, Button, Header } from "semantic-ui-react"
+import { Form, Card, Input, Button, Header } from "semantic-ui-react"
 import "./Login.css"
 function Login() {
   const [formData, setFormData] = useState({
@@ -14,8 +14,6 @@ function Login() {
 
 
   function handleSubmit(e) {
-    console.log("testinsg")
-    console.log("formData:",formData)
       e.preventDefault();
       fetch("/login", {
         method: "POST",
@@ -50,6 +48,7 @@ function Login() {
   }
 
   return (
+   
     <div className="login" style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "50vh", margin: "3em" }}>
       <Form onSubmit={handleSubmit} style={{ width: "50%" }}>
         <Header as='h1' style={{alignItems: 'center', justifyContent: 'center' }}>Login Form</Header>
