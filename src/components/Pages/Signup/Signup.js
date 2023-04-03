@@ -58,7 +58,7 @@ function SignUp() {
           SignUp Form
         </Header>
         <Form.Field>
-          <label>Admin Name</label>
+          <label style = {{ fontSize: '16px' }}>Admin Name</label>
           <Input
             type="text"
             name="adminname"
@@ -69,7 +69,7 @@ function SignUp() {
           />
         </Form.Field>
         <Form.Field>
-          <label>Email</label>
+          <label style = {{ fontSize: '16px' }}>Email</label>
           <Input
             type="email"
             name="email"
@@ -80,7 +80,7 @@ function SignUp() {
           />
         </Form.Field>
         <Form.Field>
-          <label>Password</label>
+          <label style = {{ fontSize: '16px' }}>Password</label>
           <Input
             type="password"
             name="password"

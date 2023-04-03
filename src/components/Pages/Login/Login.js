@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Form, Card, Input, Button, Header } from "semantic-ui-react"
+import { Form, Input, Button, Header } from "semantic-ui-react"
 import "./Login.css"
 function Login() {
   const [formData, setFormData] = useState({
@@ -53,7 +53,7 @@ function Login() {
       <Form onSubmit={handleSubmit} style={{ width: "50%" }}>
         <Header as='h1' style={{alignItems: 'center', justifyContent: 'center' }}>Login Form</Header>
         <Form.Field>
-          <label>Admin Name</label>
+          <label style = {{ fontSize: '16px' }}>Admin Name</label>
           <Input
             type="text"
             name="adminname"
@@ -63,7 +63,7 @@ function Login() {
           />
         </Form.Field>
         <Form.Field>
-          <label>Password</label>
+          <label style = {{ fontSize: '16px' }}>Password</label>
           <Input
             type="password"
             name="password"
