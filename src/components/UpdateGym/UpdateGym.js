@@ -14,7 +14,7 @@ function UpdateGym() {
   const [price, setPrice] = useState("");
 
   useEffect(() => {
-    fetch(`/gyms/${id}`, {
+    fetch(`https://gymfinder.onrender.com/gyms/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

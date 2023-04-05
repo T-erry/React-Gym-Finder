@@ -37,7 +37,7 @@ function ViewGym() {
   }, [id, token, navigate]);
 
   function handleDeleteClick() {
-    fetch(`/gyms/${id}`, {
+    fetch(`https://gymfinder.onrender.com/gyms/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -73,7 +73,7 @@ function ViewGym() {
 
                 <div id="linkBtn">
                   <Link
-                    to={`/updategym/${gym.id}`}
+                    to={`https://gymfinder.onrender.com/updategym/${gym.id}`}
                     className="btn btn-outline-dark btn-md"
                   >
                     Update

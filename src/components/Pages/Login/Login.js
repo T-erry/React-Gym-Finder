@@ -6,7 +6,7 @@ import "./Login.css"
 function Login() {
   const [formData, setFormData] = useState({
     adminname: "",
-    password: "",
+    password: ""
   });
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ function Login() {
 
   function handleSubmit(e) {
       e.preventDefault();
-      fetch("/login", {
+      fetch("https://gymfinder.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

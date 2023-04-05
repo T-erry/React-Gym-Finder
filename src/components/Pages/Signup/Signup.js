@@ -14,7 +14,7 @@ function SignUp() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/admins", {
+    fetch("https://gymfinder.onrender.com/admins", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
