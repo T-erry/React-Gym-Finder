@@ -73,7 +73,7 @@ function ViewGym() {
 
                 <div id="linkBtn">
                   <Link
-                    to={`https://gymfinder.onrender.com/updategym/${gym.id}`}
+                    to={`/updategym/${gym.id}`}
                     className="btn btn-outline-dark btn-md"
                   >
                     Update

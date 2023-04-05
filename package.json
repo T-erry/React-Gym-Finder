@@ -1,6 +1,6 @@
 {
   "name": "my-find-gym",
-  "proxy": "http://localhost:3000",
+  "proxy": "https://gymfinder.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
