@@ -12,7 +12,7 @@ function ViewGym() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(`/gyms/${id}`, {
+    fetch(`https://gymfinder.onrender.com/gyms/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

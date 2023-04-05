@@ -36,7 +36,7 @@ console.log(image);
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch(`/gyms/${id}`, {
+    fetch(`https://gymfinder.onrender.com/gyms/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
