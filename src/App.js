@@ -16,7 +16,7 @@ function App() {
 
 
   useEffect(() => {
-      fetch("https://gymfinder.onrender.com/gyms")
+      fetch("/gyms")
       .then((res)=> res.json())
       .then((data)=> setGyms(data))
   },[])

@@ -15,7 +15,7 @@ function Login() {
 
   function handleSubmit(e) {
       e.preventDefault();
-      fetch("https://gymfinder.onrender.com/login", {
+      fetch("/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

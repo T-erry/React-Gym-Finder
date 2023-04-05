@@ -12,7 +12,7 @@ function ViewGym() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(`https://gymfinder.onrender.com/gyms/${id}`, {
+    fetch(`/gyms/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -37,7 +37,7 @@ function ViewGym() {
   }, [id, token, navigate]);
 
   function handleDeleteClick() {
-    fetch(`https://gymfinder.onrender.com/gyms/${id}`, {
+    fetch(`/gyms/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,

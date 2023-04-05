@@ -14,7 +14,7 @@ function UpdateGym() {
   const [price, setPrice] = useState("");
 
   useEffect(() => {
-    fetch(`https://gymfinder.onrender.com/gyms/${id}`, {
+    fetch(`/gyms/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -36,7 +36,7 @@ console.log(image);
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch(`https://gymfinder.onrender.com/gyms/${id}`, {
+    fetch(`/gyms/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

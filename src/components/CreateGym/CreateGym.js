@@ -23,7 +23,7 @@ function CreateGym({ onAddGym }) {
       return;
     }
 
-    fetch("https://gymfinder.onrender.com/gyms", {
+    fetch("/gyms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
